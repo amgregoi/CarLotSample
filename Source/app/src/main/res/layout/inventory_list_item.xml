@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/charcoal"
+	android:orientation="vertical"
+    android:elevation="5dp"
+	>
+
+	<ImageView
+		android:layout_marginTop="10dp"
+		android:id="@+id/image"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/ic_directions_car_white_48dp"/>
+
+	<RelativeLayout
+		android:layout_marginTop="15dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="15dp"
+		android:layout_marginStart="15dp"
+		android:layout_toRightOf="@+id/image"
+		android:orientation="vertical"
+		>
+
+		<!-- column one -->
+		<LinearLayout
+			android:id="@+id/column_one"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:orientation="vertical"
+			>
+
+			<!-- Car Name -->
+			<LinearLayout
+				android:id="@+id/car_name_layout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp"
+				>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Car Name: "
+					android:textColor="@color/white"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					/>
+
+				<TextView
+					android:id="@+id/car_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Pinto 1"
+					android:textColor="@color/white"/>
+			</LinearLayout>
+
+			<!-- Fuel Type -->
+			<LinearLayout
+				android:id="@+id/fuel_type_layout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			    android:layout_marginBottom="5dp"
+				>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Fuel Type: "
+					android:textColor="@color/white"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					/>
+
+				<TextView
+					android:id="@+id/fuel_type"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Gas"
+					android:textColor="@color/white"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<!-- Column two -->
+		<LinearLayout
+			android:layout_marginLeft="15dp"
+			android:layout_toRightOf="@id/column_one"
+			android:orientation="vertical"
+			android:id="@+id/column_two"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<!-- Price of Car -->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp"
+				>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Price: "
+					android:textColor="@color/white"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					/>
+
+				<TextView
+					android:id="@+id/car_price"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="$14,000"
+					android:textColor="@color/white"/>
+			</LinearLayout>
+
+			<!-- Fuel Level -->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp"
+				>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Fuel Level: "
+					android:textColor="@color/white"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					/>
+
+				<TextView
+					android:id="@+id/fuel_level"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="14"
+					android:textColor="@color/white"/>
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

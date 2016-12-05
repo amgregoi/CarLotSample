@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/charcoal"
+              android:orientation="vertical"
+	>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<include
+			android:id="@+id/test"
+			layout="@layout/inventory_list_item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			/>
+
+
+		<LinearLayout
+			android:layout_below="@id/test"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+		    android:gravity="center"
+		    android:orientation="vertical"
+			android:layout_marginLeft="40dp"
+			android:layout_marginRight="40dp"
+			>
+
+			<Button
+				android:id="@+id/fuel_button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Add Fuel"
+				/>
+
+			<Button
+				android:id="@+id/sale_button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+
+				android:text="Put on Sale"/>
+
+			<Button
+				android:id="@+id/drive_button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Drive Car"/>
+
+			<Button
+				android:id="@+id/honk_button"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Honk Horn"/>
+
+		</LinearLayout>
+		<Button
+			android:id="@+id/remove_button"
+			android:layout_alignParentBottom="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Remove from car lot"/>
+	</RelativeLayout>
+</LinearLayout>
